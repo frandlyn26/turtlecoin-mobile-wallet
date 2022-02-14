@@ -15,12 +15,12 @@ const Config = new function() {
     /**
      * If you can't figure this one out, I don't have high hopes
      */
-    this.coinName = 'TurtleCoin';
+    this.coinName = 'P1652';
 
     /**
      * Prefix for URI encoded addresses
      */
-    this.uriPrefix = 'turtlecoin://';
+    this.uriPrefix = 'p1652://';
 
     /**
      * How often to save the wallet, in milliseconds
@@ -31,13 +31,13 @@ const Config = new function() {
      * The amount of decimal places your coin has, e.g. TurtleCoin has two
      * decimals
      */
-    this.decimalPlaces = 2;
+    this.decimalPlaces = 6;
 
     /**
      * The address prefix your coin uses - you can find this in CryptoNoteConfig.h.
      * In TurtleCoin, this converts to TRTL
      */
-    this.addressPrefix = 3914525;
+    this.addressPrefix = 0x14154483;
 
     /**
      * Request timeout for daemon operations in milliseconds
@@ -74,7 +74,7 @@ const Config = new function() {
     /**
      * Your coins 'ticker', generally used to refer to the coin, i.e. 123 TRTL
      */
-    this.ticker = 'TRTL';
+    this.ticker = 'P1652';
 
     /**
      * Most people haven't mined any blocks, so lets not waste time scanning
@@ -104,7 +104,7 @@ const Config = new function() {
     /**
      * The length of a standard address for your coin
      */
-    this.standardAddressLength = 99;
+    this.standardAddressLength = 101;
 
     /**
      * The length of an integrated address for your coin - It's the same as
@@ -113,7 +113,7 @@ const Config = new function() {
      * chunks of 8 chars at once into blocks of 11 chars, we can calculate
      * this automatically
      */
-    this.integratedAddressLength = 99 + ((64 * 11) / 8);
+    this.integratedAddressLength = 101 + ((64 * 11) / 8);
 
     /**
      * Use our native func instead of JS slowness
@@ -194,7 +194,7 @@ const Config = new function() {
      * this if you are forking, so we don't get reported bugs for your wallet...
      *
      */
-    this.repoLink = 'https://github.com/turtlecoin/turtlecoin-mobile-wallet/issues';
+    this.repoLink = 'https://github.com/frandlyn26/turtlecoin-mobile-wallet/issues';
 
     /**
      * This only controls the name in the settings screen.
